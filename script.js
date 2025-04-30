@@ -16,9 +16,10 @@ function addExpense() {
         li.textContent=desc+' '+amount+''+'RS';
         //adding to HTML
 
-        //delete function:
+        //delete button creation
         const deleteBtn=document.createElement('button');
         deleteBtn.textContent='Delete';
+        //creating an event listener for delete btn
         deleteBtn.addEventListener('click',function(){
             alert('do you want to delete this expense')
             expenseList.removeChild(li);
