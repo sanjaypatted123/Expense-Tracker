@@ -4,7 +4,7 @@ const addExpenseDesc=document.getElementById('desc');
 const addExpenseButton=document.getElementById('expense-btn');
 const expenseList=document.getElementById('expense-list');
 
-
+//adding the function addExpense
 function addExpense() {
     const desc=addExpenseDesc.value;
     const amount=addAmount.value;
