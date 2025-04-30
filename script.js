@@ -15,6 +15,15 @@ function addExpense() {
         //assign it with values
         li.textContent=desc+' '+amount+''+'RS';
         //adding to HTML
+
+        //delete function:
+        const deleteBtn=document.createElement('button');
+        deleteBtn.textContent='Delete';
+        deleteBtn.addEventListener('click',function(){
+            alert('do you want to delete this expense')
+            expenseList.removeChild(li);
+        });
+        li.appendChild(deleteBtn);
         expenseList.appendChild(li);
 
         //clearing the input fields after adding
