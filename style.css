@@ -1,4 +1,3 @@
-/* General page styling */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #e9eff5;
@@ -13,14 +12,12 @@ body {
     border-radius: 12px;
 }
 
-/* Headings */
 h2, h3 {
     text-align: center;
     color: #2c3e50;
     margin-bottom: 20px;
 }
 
-/* Input fields */
 label {
     display: block;
     margin-top: 15px;
@@ -46,7 +43,6 @@ input[type="number"]:focus {
     outline: none;
 }
 
-/* Button styling */
 button {
     margin-top: 20px;
     width: 100%;
@@ -66,7 +62,6 @@ button:hover {
     transform: translateY(-2px);
 }
 
-/* Expense list */
 ol {
     margin-top: 20px;
     padding-left: 0;
@@ -84,7 +79,6 @@ ol li {
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
 }
 
-/* Delete button inside list item */
 ol li button {
     background-color: #e74c3c;
     border: none;
