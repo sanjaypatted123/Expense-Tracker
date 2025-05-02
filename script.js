@@ -12,7 +12,7 @@ function addExpense() {
     if(desc && amount){
         //create the new list item
         const li=document.createElement('li');
-        //assign it with values
+        //assign it with values or adding the text
         li.textContent=desc+' '+amount+''+'RS';
         //adding to HTML
 
@@ -23,16 +23,29 @@ function addExpense() {
         deleteBtn.addEventListener('click',function(){
             alert('do you want to delete this expense')
             expenseList.removeChild(li);
+        
+        
+        
+        
+        
+        
+        
         });
+        let newDiv=document.createElement('div');
+        // newDiv.textContent='i am new div';////new one 
         li.appendChild(deleteBtn);
         expenseList.appendChild(li);
-
+        // body=document.querySelector('body');///new one
+        // body.appendChild(newDiv);// new one
+        
+        
         //clearing the input fields after adding
         addExpenseDesc.value='';
         addAmount.value='';
     }else{
         alert('please enter both the inputs !!!!')
     }
+    
     }
     addExpenseButton.addEventListener('click',addExpense)
 
