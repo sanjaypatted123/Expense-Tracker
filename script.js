@@ -43,4 +43,3 @@ function addExpense() {
     }
     addExpenseButton.addEventListener('click',addExpense)
 
-
