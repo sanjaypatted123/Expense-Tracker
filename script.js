@@ -24,14 +24,8 @@ function addExpense() {
             alert('do you want to delete this expense')
             expenseList.removeChild(li);
         
-        
-        
-        
-        
-        
-        
         });
-        let newDiv=document.createElement('div');
+        // let newDiv=document.createElement('div');// new one
         // newDiv.textContent='i am new div';////new one 
         li.appendChild(deleteBtn);
         expenseList.appendChild(li);
