@@ -21,7 +21,7 @@ function addExpense() {
         deleteBtn.textContent='Delete';
         //creating an event listener for delete btn
         deleteBtn.addEventListener('click',function(){
-            alert('do you want to delete this expense')
+            alert('do you want to delete this expense');
             expenseList.removeChild(li);
         
         });
@@ -44,10 +44,10 @@ function addExpense() {
     }
         
     
-    }
+    };
         let newP=document.createElement('p');
         let body=document.querySelector('body');
         body.prepend(newP);
         newP.innerText='hey im new para tag';
-    addExpenseButton.addEventListener('click',addExpense)
+    addExpenseButton.addEventListener('click',addExpense);
 
