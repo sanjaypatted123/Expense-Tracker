@@ -50,4 +50,3 @@ function addExpense() {
         body.prepend(newP);
         newP.innerText='hey im new para tag';
     addExpenseButton.addEventListener('click',addExpense);
-
