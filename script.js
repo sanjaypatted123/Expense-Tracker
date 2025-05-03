@@ -25,21 +25,29 @@ function addExpense() {
             expenseList.removeChild(li);
         
         });
-        // let newDiv=document.createElement('div');// new one
-        // newDiv.textContent='i am new div';////new one 
+        let newDiv=document.createElement('div');// new one
+        newDiv.innerText='i am new div';////new one 
         li.appendChild(deleteBtn);
         expenseList.appendChild(li);
-        // body=document.querySelector('body');///new one
-        // body.appendChild(newDiv);// new one
-        
-        
+        let body=document.querySelector('body');///new one
+        body.prepend(newDiv);// new one
         //clearing the input fields after adding
         addExpenseDesc.value='';
         addAmount.value='';
+
+
+
+        
+        
     }else{
         alert('please enter both the inputs !!!!')
     }
+        
     
     }
+        let newP=document.createElement('p');
+        let body=document.querySelector('body');
+        body.prepend(newP);
+        newP.innerText='hey im new para tag';
     addExpenseButton.addEventListener('click',addExpense)
 
